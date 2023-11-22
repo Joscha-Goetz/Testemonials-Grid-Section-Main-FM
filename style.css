@@ -21,7 +21,59 @@ OWN CODE
   --verified-graduate: hsla(210, 46%, 95%, 50%);
   --paragraph: hsla(210, 46%, 95%, 70%);
 }
+
+/* *frame */
 body {
+  /* font-styles */
   font-size: 13px;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  /* attribution handling and centering main */
+  padding-top: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 2rem;
+  /* color */
+  background: var(--light-grayish-blue);
+}
+.main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  /* dimensions */
+  width: 70rem;
+  height: 70vh;
+
+  /* *grid */
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+}
+.wrapper__left-side {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.wrapper__left-side > .blue {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.wrapper__left-side > .black {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/* *cards */
+.blue {
+  background-color: var(--moderate-violet);
+}
+.gray {
+  background-color: var(--very-dark-grayish-blue);
+}
+.white {
+  background-color: var(--white);
+}
+.black {
+  background-color: var(--very-dark-blackish-blue);
 }
